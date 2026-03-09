@@ -1,0 +1,15 @@
+<svg width="1200" height="630" viewBox="0 0 1200 630" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1200" height="630" fill="#0A0A0F" />
+  <circle cx="220" cy="120" r="220" fill="#00F0FF" fill-opacity="0.18" />
+  <circle cx="980" cy="70" r="270" fill="#7000FF" fill-opacity="0.2" />
+  <circle cx="640" cy="670" r="280" fill="#00F0FF" fill-opacity="0.12" />
+  <text x="96" y="284" fill="#FFFFFF" font-family="Space Grotesk, Arial, sans-serif" font-size="72" font-weight="700">
+    DOSATECHNY
+  </text>
+  <text x="96" y="364" fill="#00F0FF" font-family="Space Grotesk, Arial, sans-serif" font-size="56" font-weight="600">
+    Develop Once. Search Everywhere.
+  </text>
+  <text x="96" y="430" fill="#A0A0B0" font-family="Inter, Arial, sans-serif" font-size="28">
+    SEO-first web application architecture.
+  </text>
+</svg>

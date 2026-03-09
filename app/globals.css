@@ -3,31 +3,99 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --color-bg: #0a0a0f;
+  --color-surface: #12121a;
+  --color-primary: #00f0ff;
+  --color-secondary: #7000ff;
+  --color-text: #ffffff;
+  --color-muted: #a0a0b0;
+  --color-subtle: #606070;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  border-color: rgba(255, 255, 255, 0.08);
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  min-height: 100vh;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+  background-image:
+    radial-gradient(circle at 14% 12%, rgba(0, 240, 255, 0.18), transparent 32%),
+    radial-gradient(circle at 86% 0%, rgba(112, 0, 255, 0.22), transparent 36%),
+    radial-gradient(circle at 50% 100%, rgba(0, 240, 255, 0.08), transparent 42%);
 }
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+
+  .container-shell {
+    @apply mx-auto w-full max-w-7xl px-6 md:px-10;
+  }
+
+  .section-spacing {
+    @apply py-20 md:py-28;
+  }
+
+  .glass-panel {
+    @apply rounded-2xl border border-white/10 bg-white/5 backdrop-blur-xl;
+  }
+
+  .text-gradient {
+    @apply bg-gradient-to-r from-brand-primary via-cyan-200 to-brand-secondary bg-clip-text text-transparent;
+  }
+
+  .electric-border {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .electric-border::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: inherit;
+    padding: 1px;
+    background: linear-gradient(110deg, rgba(0, 240, 255, 0.72), rgba(112, 0, 255, 0.58));
+    mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask:
+      linear-gradient(#fff 0 0) content-box,
+      linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+  }
+
+  .noise-overlay {
+    background-image: radial-gradient(rgba(255, 255, 255, 0.07) 1px, transparent 0);
+    background-size: 3px 3px;
+  }
+}
+
+::selection {
+  background: rgba(0, 240, 255, 0.35);
+  color: var(--color-text);
+}
+
+.btn-primary {
+  @apply rounded-full bg-gradient-to-r from-brand-primary to-cyan-400 px-6 py-3 text-sm font-semibold tracking-wide text-black shadow-glow transition-all duration-300 hover:scale-105 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary;
+}
+
+.btn-secondary {
+  @apply rounded-full border border-brand-primary/60 bg-transparent px-6 py-3 text-sm font-semibold text-brand-primary transition-all duration-300 hover:bg-brand-primary/10 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-primary;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  ::before,
+  ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
   }
 }
