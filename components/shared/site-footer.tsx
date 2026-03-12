@@ -49,7 +49,7 @@ export function SiteFooter() {
         <div>
           <p className="text-sm font-semibold uppercase tracking-[0.2em] text-brand-subtle">Connect</p>
           <div className="mt-4 flex flex-col gap-3 text-sm text-brand-muted">
-            <a href="mailto:hello@dosatechny.com" className="transition-colors hover:text-brand-primary">
+            <a href="mailto:dosatechny@gmail.com" className="transition-colors hover:text-brand-primary">
               dosatechny@gmail.com
             </a>
             <a href="https://www.linkedin.com" className="transition-colors hover:text-brand-primary" target="_blank" rel="noreferrer">
@@ -58,7 +58,7 @@ export function SiteFooter() {
             <a href="https://github.com" className="transition-colors hover:text-brand-primary" target="_blank" rel="noreferrer">
               Instagram
             </a>
-            <a href="tel:+15550000000" className="transition-colors hover:text-brand-primary">
+            <a href="+91 7893975125" className="transition-colors hover:text-brand-primary">
               Cell: 91+ 7893975125
             </a>
           </div>

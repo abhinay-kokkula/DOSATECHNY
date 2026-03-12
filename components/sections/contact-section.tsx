@@ -35,7 +35,7 @@ export function ContactSection() {
                   type="text"
                   required
                   className="w-full rounded-xl border border-white/15 bg-brand-surface/70 px-4 py-3 text-sm text-brand-text outline-none focus:border-brand-primary"
-                  placeholder="Alex Morgan"
+                  placeholder="Abhinay kokkula"
                 />
               </div>
 
@@ -47,7 +47,7 @@ export function ContactSection() {
                   type="email"
                   required
                   className="w-full rounded-xl border border-white/15 bg-brand-surface/70 px-4 py-3 text-sm text-brand-text outline-none focus:border-brand-primary"
-                  placeholder="you@company.com"
+                  placeholder="yourmail@email.com"
                 />
               </div>
 

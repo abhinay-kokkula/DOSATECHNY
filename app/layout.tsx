@@ -23,12 +23,12 @@ const jetBrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   ...buildMetadata({
-    title: "Develop Once, Search Everywhere",
+    title: "DosaTechny",
     description:
       "DOSATECHNY is a premium web application partner building SEO-first, scalable platforms for startups and enterprises.",
     path: "/",
     keywords: [
-      "DOSATECHNY",
+      "Develop Once Search Anywhere",
       "SEO-first development",
       "Next.js agency",
       "web application architecture",
