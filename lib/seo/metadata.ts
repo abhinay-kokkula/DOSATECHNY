@@ -4,7 +4,7 @@ const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dosatechny.com";
 
 export const siteConfig = {
   name: "Develop Once, Search Anywhere",
-  // tagline: "Develop Once, Search Anywhere",
+  tagline: "Develop Once, Search Anywhere",
   description:
     "Premium web application engineering studio focused on SEO-first architecture, scalable systems, and measurable digital growth.",
   url: baseUrl,

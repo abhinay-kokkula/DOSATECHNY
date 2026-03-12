@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     keywords: [
       "Develop Once Search Anywhere",
       "SEO-first development",
-      "Next.js agency",
+      "web partners",
       "web application architecture",
       "technical SEO",
     ],
