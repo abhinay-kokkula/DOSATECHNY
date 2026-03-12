@@ -8,11 +8,11 @@ import { buildMetadata } from "@/lib/seo/metadata";
 import { breadcrumbSchema, organizationSchema } from "@/lib/seo/schema";
 
 export const metadata = buildMetadata({
-  title: "Develop Once. Search Anywhere.",
+  title: "DosaTechny",
   description:
     "DOSATECHNY architects web applications with SEO DNA built in from day one, delivering discoverable products that scale globally.",
   path: "/",
-  keywords: ["web application agency", "technical SEO", "Next.js development", "edge architecture"],
+  keywords: ["web application agency", "technical SEO", "development", "edge architecture"],
 });
 
 export default function HomePage() {
