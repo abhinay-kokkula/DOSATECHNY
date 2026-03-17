@@ -41,7 +41,7 @@ export default function AboutPage() {
         <div className="container-shell">
           <Reveal>
             <p className="text-sm uppercase tracking-[0.24em] text-brand-primary">About DOSATECHNY</p>
-            <h1 className="mt-4 max-w-4xl font-display text-4xl md:text-6xl">People will thought it's a food item But,</h1>
+            <h1 className="mt-4 max-w-4xl font-display text-4xl md:text-6xl">People will thought its a food item But,</h1>
             <p className="mt-6 max-w-3xl text-lg text-brand-muted">
               We started DOSATECHNY to build websites that helps you to visible your online presence anywhere in the Internet.
             </p>
