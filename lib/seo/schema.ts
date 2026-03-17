@@ -33,37 +33,6 @@ export function serviceSchema(name: string, description: string, slug: string) {
   };
 }
 
-export function articleSchema(input: {
-  title: string;
-  description: string;
-  slug: string;
-  publishedAt: string;
-  author: string;
-}) {
-  return {
-    "@context": "https://schema.org",
-    "@type": "BlogPosting",
-    headline: input.title,
-    description: input.description,
-    datePublished: input.publishedAt,
-    dateModified: input.publishedAt,
-    mainEntityOfPage: buildAbsoluteUrl(`/insights/${input.slug}`),
-    author: {
-      "@type": "Person",
-      name: input.author,
-    },
-    publisher: {
-      "@type": "Organization",
-      name: siteConfig.name,
-      logo: {
-        "@type": "ImageObject",
-        url: buildAbsoluteUrl("/icons/logo.svg"),
-      },
-    },
-    image: buildAbsoluteUrl(siteConfig.ogImage),
-  };
-}
-
 export function breadcrumbSchema(items: Array<{ name: string; path: string }>) {
   return {
     "@context": "https://schema.org",

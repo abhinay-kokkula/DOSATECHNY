@@ -16,7 +16,6 @@ const contactSchema = z.object({
 });
 
 type ContactFormValues = z.infer<typeof contactSchema>;
-
 const stepFields: Array<keyof ContactFormValues> = [
   "projectType",
   "budget",
@@ -123,10 +122,12 @@ export function ContactWizard() {
             {...register("projectType")}
           >
             <option value="">Choose a type</option>
-            <option value="Web Application Build">Web Application Build</option>
-            <option value="SEO Architecture Audit">SEO Architecture Audit</option>
-            <option value="Cloud Migration">Cloud Migration</option>
-            <option value="API Platform Modernization">API Platform Modernization</option>
+
+                  <option value="ecommerce">E-commerce</option>
+                  <option value="portfolio">Portfolio</option>
+                  <option value="spa">Single-page app</option>
+                  <option value="education">Educational platform</option>
+                  <option value="other">Something else</option>
           </select>
           <p className="mt-2 text-xs text-rose-300">{errors.projectType?.message}</p>
         </div>
@@ -143,11 +144,13 @@ export function ContactWizard() {
             {...register("budget")}
           >
             <option value="">Choose a range</option>
-            <option value="$15k - $30k">$15k - $30k</option>
-            <option value="$30k - $70k">$30k - $70k</option>
-            <option value="$70k - $150k">$70k - $150k</option>
-            <option value="$150k+">$150k+</option>
-          </select>
+            <option value="₹100k+">₹100k</option>
+            <option value="₹50k">₹50k</option>
+            <option value="₹25k">₹25k</option>
+            <option value="₹20k">₹20k</option>
+            <option value="₹10k">₹10k</option>
+            <option value="₹5k">₹5k</option>
+          </select> 
           <p className="mt-2 text-xs text-rose-300">{errors.budget?.message}</p>
         </div>
       )}
@@ -163,10 +166,10 @@ export function ContactWizard() {
             {...register("timeline")}
           >
             <option value="">Choose a timeline</option>
-            <option value="2-4 weeks">2-4 weeks</option>
-            <option value="1-2 months">1-2 months</option>
-            <option value="2-4 months">2-4 months</option>
-            <option value="4+ months">4+ months</option>
+            <option value="1week">1 week</option>
+            <option value="2-3weeks">2-3 Weeks</option>
+            <option value="#-4weeks">3-4Weeks</option>
+            <option value="1 month">1 month</option>
           </select>
           <p className="mt-2 text-xs text-rose-300">{errors.timeline?.message}</p>
         </div>

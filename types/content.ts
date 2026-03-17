@@ -14,27 +14,8 @@ export interface CaseStudyMetric {
 
 export interface CaseStudy {
   slug: string;
-  client: string;
-  industry: string;
-  summary: string;
-  stack: string[];
-  projectType: string;
-  challenge: string;
-  solution: string;
-  results: string;
-  metrics: CaseStudyMetric[];
-  liveUrl?: string;
-  githubUrl?: string;
+  title: string;
+  description: string;
+  link: string;
 }
 
-export interface InsightPost {
-  slug: string;
-  title: string;
-  excerpt: string;
-  category: string;
-  author: string;
-  readTime: string;
-  publishedAt: string;
-  series?: string;
-  content: string[];
-}

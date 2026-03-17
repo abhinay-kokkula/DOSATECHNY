@@ -61,9 +61,9 @@ export function HomeHero() {
             className="mt-10 flex flex-wrap gap-4"
           >
             <MagneticButton href="/#contact">Start Your Journey</MagneticButton>
-            {/* <MagneticButton href="/work" variant="secondary">
+            <MagneticButton href="/work" variant="secondary">
               View Our Work
-            </MagneticButton> */}
+            </MagneticButton>
           </motion.div>
         </div>
 

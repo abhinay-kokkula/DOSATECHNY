@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dosatechny.com";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://dosatechny.tech";
 
 export const siteConfig = {
   name: "DosaTechny",

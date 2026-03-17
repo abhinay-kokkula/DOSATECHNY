@@ -13,13 +13,13 @@ export const metadata = buildMetadata({
 });
 
 export default function ContactPage() {
-  const localTime = new Intl.DateTimeFormat("en-US", {
-    hour: "2-digit",
-    minute: "2-digit",
-    hour12: true,
-    timeZone: "Asia/Kolkata",
-    timeZoneName: "short",
-  }).format(new Date());
+  // const localTime = new Intl.DateTimeFormat("en-US", {
+  //   hour: "2-digit",
+  //   minute: "2-digit",
+  //   hour12: true,
+  //   timeZone: "Asia/Kolkata",
+  //   timeZoneName: "short",
+  // }).format(new Date());
 
   return (
     <>
@@ -46,26 +46,26 @@ export default function ContactPage() {
               <h2 className="font-display text-2xl">Studio Operations</h2>
               <div className="mt-6 space-y-4 text-sm text-brand-muted">
                 <p>
-                  <span className="text-brand-text">Office Time:</span> {localTime}
+                  <span className="text-brand-text">Office Timings: 9am-11pm</span>
                 </p>
                 <p>
-                  <span className="text-brand-text">Response Promise:</span> Under 2 hours
+                  <span className="text-brand-text">We Response :</span> Under 12 hours
                 </p>
                 <p>
-                  <span className="text-brand-text">Emergency Hotline:</span> +1 (555) 000-0000
+                  <span className="text-brand-text">Telephone:</span> +91 7893975125
                 </p>
               </div>
 
               <div className="mt-8 rounded-2xl border border-white/10 bg-[linear-gradient(140deg,#131320,#0f1522)] p-4">
-                <p className="text-xs uppercase tracking-[0.15em] text-brand-subtle">Office Map</p>
+                <p className="text-xs uppercase tracking-[0.15em] text-brand-subtle">Location</p>
                 <div className="mt-3 h-48 rounded-xl border border-white/10 bg-[radial-gradient(circle_at_30%_20%,rgba(0,240,255,0.2),transparent_35%),radial-gradient(circle_at_80%_80%,rgba(112,0,255,0.25),transparent_35%),#08080d]" />
-                <p className="mt-3 text-xs text-brand-subtle">Bengaluru · Hyderabad · Remote Global Delivery</p>
+                <p className="mt-3 text-xs text-brand-subtle">Currently no official offline location,we are anywhere on internet.</p>
               </div>
 
-              <div className="mt-6 rounded-2xl border border-dashed border-white/25 p-4">
+              {/* <div className="mt-6 rounded-2xl border border-dashed border-white/25 p-4">
                 <p className="text-xs uppercase tracking-[0.15em] text-brand-subtle">RFP Drop Zone</p>
                 <p className="mt-2 text-sm text-brand-muted">Drag and drop your RFP package (PDF, DOCX, ZIP) when API upload is connected.</p>
-              </div>
+              </div> */}
             </aside>
           </Reveal>
         </div>
